@@ -28,7 +28,7 @@ alert("Welcome to JS land...\nHappy Coding!");
 //Prevent this page from creating additional dialogues
 
 alert("Welcome to JS land...");
-alert("appy Coding!\nPrevent this page from creating additional dialogues");
+alert("Happy Coding!\nPrevent this page from creating additional dialogues");
 
 //Assignment # 5:Generate the following message through browser's developer console:
 

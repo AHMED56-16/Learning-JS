@@ -42,3 +42,42 @@ country="Pakistan";
 let fullMailingAddress = street + ' ' + country;
 
 console.log(fullMailingAddress);
+
+// Assignment # 3:
+
+/*
+    1.Create "score1","score2","score3" variables & assign values (0 to 100)
+    2.Calculate total score and average score,and assign them to the variables
+    3.Log total score and average score
+    4.Create 'plates' variables & assign 20
+    5.Create people variables & assign 7
+    6.Calculate remaining plates and assign to the variable
+    7.Add one to remaining plates
+    8.Create message variable & display 'There are (your value goes here) plates available'-string concatination
+    9.Log message 
+*/
+
+let score1=76;
+let score2=99;
+let score3=56;
+
+let totalScore = score1 + score2 + score3;
+
+let averageScore = totalScore / 3;
+
+console.log('Total Score:', totalScore);
+
+console.log('Average Score:', averageScore);
+
+let plates = 20;
+
+let people = 7;
+
+let remainingPlates = plates - people;
+
+remainingPlates++;
+
+let message = 'There are'+" "+remainingPlates +" "+'plates available';
+
+console.log(message);
+
