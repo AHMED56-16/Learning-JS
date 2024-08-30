@@ -81,3 +81,50 @@ let message = 'There are'+" "+remainingPlates +" "+'plates available';
 
 console.log(message);
 
+// Assignment # 4:
+
+/*
+    1.Create "fruits" array and store some fruit values
+    2.Setup the last item as number
+    3.Assign first fruit to the variable
+    4.Reassign last array item to the actual fruit
+    5.Log both fist fruit variable and entire fruit array
+*/
+
+let fruits = ['apple', 'banana', 'orange', 'grape',56];
+
+let firstFruit = fruits[0];
+
+fruits[fruits.length - 1] = 'mango';
+
+console.log('First Fruit:', firstFruit);
+
+console.log('Fruits Array:', fruits);
+
+// Assignment # 5:
+
+/*
+    1.Create "calculateTotal" function
+    2.Add two parameters subTotal,tax
+    3.Return sum of parameters
+
+    4.Create 3 vars "order1","order2" and "order3" 
+    5.Call "calculateTotal",pass in some values and assign result to each orders
+    6.Log all three orders
+*/
+
+function calculateTotal(subTotal, tax) {
+    return subTotal + tax;
+}
+
+let order1 = calculateTotal(100, 5);
+
+let order2 = calculateTotal(200, 10);
+
+let order3 = calculateTotal(300, 15);
+
+console.log('Order 1:', order1);
+
+console.log('Order 2:', order2);
+
+console.log('Order 3:', order3);
