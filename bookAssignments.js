@@ -46,7 +46,7 @@ alert("Hello.. I can run JS through my web browser's console");
 
 // Syntax:
 
-// let variableName = value;
+// let variableName = "value";
 
 //Assignment # 1:Declare a variable called userName
 
@@ -123,3 +123,49 @@ let displayingInBrowserAndAlertBox="---------ஜரமாக---------";
 alert(displayingInBrowserAndAlertBox);
 
 document.write(displayingInBrowserAndAlertBox);
+
+//CHAPTER # 2-Variables for numbers:
+
+// Variables for numbers are used to store numeric values. They are created using the let, const, or var keyword.
+
+// Syntax:
+
+// let variableName = value;
+
+//Assignment # 1: Declare a variable called age & assign it to your age.Show your age in an alert box.
+
+let age=18;
+
+alert(`I am ${age} years old `);
+
+//Assignment # 2: Declare and initialize a variable to keep track of how many times a visitor has visited a webpage.Show his/her number of visits on your webpage.For example:"You have visited site N times"
+
+let numberOfVisits=16;
+
+alert(`You have visited site ${numberOfVisits} times`);
+
+//Assignment # 3: Declare a variable called birthYear and assign it to your birth year.Show the following message in your browser:
+/*
+    My birth year is ____
+    Data type of my declared variable is ______
+*/
+
+let birthYear=2006;
+
+document.write(`My birth year is ${birthYear}.\nData type of my declared variable is ${typeof birthYear}`);
+
+/*
+    Assignment # 4:
+        A visitor visits an online clothing website www.xyzClothing.com.Write a script to store in variables the following information:
+            a. Visitor's name
+            b. Product title
+            c. Quantity of product purchased
+        Show the following message in your browser:
+        "Babar Azam ordered 56 T-shirts on XYZ Clothing store".
+*/
+
+let visitorName="Babar Azam";
+let productTitle="T-shirts";
+let quantity=56;
+
+document.write(`${visitorName} ordered ${quantity} ${productTitle} on XYZ Clothing store`);
