@@ -152,7 +152,7 @@ alert(`You have visited site ${numberOfVisits} times`);
 
 let birthYear=2006;
 
-document.write(`My birth year is ${birthYear}.\nData type of my declared variable is ${typeof birthYear}`);
+document.write(`<br>My birth year is ${birthYear}.<br>Data type of my declared variable is ${typeof birthYear}`);
 
 /*
     Assignment # 4:
@@ -168,7 +168,7 @@ let visitorName="Babar Azam";
 let productTitle="T-shirts";
 let quantity=56;
 
-document.write(`${visitorName} ordered ${quantity} ${productTitle} on XYZ Clothing store`);
+document.write(`<br>${visitorName} ordered ${quantity} ${productTitle} on XYZ Clothing store`);
 
 //CHAPTER # 4-Variables names:Legal & Illegal:
 
@@ -205,3 +205,270 @@ document.write("<p>Variable names can only contain letters, numbers,underscores 
 document.write("<p>Variables must begin with a letter,underscores or $ sign.For example: _my1stVariable my1stVariable my1stVariable</p>");
 document.write("<p>Variable names are case-sensitive</p>");
 document.write("<p>Variable names should not be JS keywords</p>");
+
+//CHAPTER # 5-Math Expressions:
+
+//Assignment # 1:Write a program that take two numbers and add them in a new variable.Show the result in your browser.
+
+//For example:Sum of 56 and 16 is 72
+let num1=+prompt("Give first number")
+
+let num2=+prompt("Give second number")
+
+let sum=num1+num2;
+
+document.write(`Sum of ${num1} and ${num2} is ${sum}`);
+
+//Assignment # 2:Repeat task 1 for subtraction,multiplication,division and modulus
+
+let subtraction=num1-num2;
+
+let multiplication=num1*num2;
+
+let division=num1/num2;
+
+let modulus=num1%num2;
+
+document.write(`<br>Subtraction of ${num1} and ${num2} is ${subtraction}`);
+
+document.write(`<br>Multiplication of ${num1} and ${num2} is ${multiplication}`);
+
+document.write(`<br>Division of ${num1} and ${num2} is ${division}`);
+
+document.write(`<br>Modulus of ${num1} and ${num2} is ${modulus}`);
+
+//Assignment # 3:
+/*  
+    3. Do the following using JS Mathematic Expressions
+        a. Declare a variable.
+        b. Show the value of variable in your browser like “Value after variable declaration is: ??”.
+        c. Initialize the variable with some number.
+        d. Show the value of variable in your browser like "Initial value: 5".
+        e. Increment the variable.
+        f. Show the value of variable in your browser like “Value after increment is: 6".
+        g. Add 7 to the variable.
+        h. Show the value of variable in your browser like "Value after addition is: 13".
+        i. Decrement the variable.
+        j. Show the value of variable in your browser like "Value after decrement is: 12".
+        k. Show the remainder after dividing the variable's value by 3.
+        l. Output: "The remainder is : o".
+*/
+
+let variable=56;
+
+document.write(`Value after variable declaration is: ${variable}`);
+
+variable=16;
+
+document.write(`<br>Initial value: ${variable}`);
+
+variable++;
+
+document.write(`<br>Value after increment is: ${variable}`);
+
+variable+=7;
+
+document.write(`<br>Value after addition is: ${variable}`);
+
+variable--;
+
+document.write(`<br>Value after decrement is: ${variable}`);
+
+let remainder=variable%3;
+
+document.write(`<br>The remainder is: ${remainder}`);
+
+//Assignment # 4:Cost of one movie ticket is 1000PKR.Write a script to store ticket price i a variable and calculate the cost of buying 5 tickets to a movie
+
+let ticketPrice=1000;
+
+let totalCost=ticketPrice*5;
+
+document.write(`<br>Total cost of buying 5 tickets is: ${totalCost} PKR`);
+
+//Assignment # 5:Write a script to display multiple table of any number in your browser.
+
+/*
+    For example:
+        Table of 4 
+        4x1=4
+        4x2=8
+        4x3=12
+        4x4=16
+        4x5=20
+        4x6=24
+        4x7=28
+        4x8=32
+        4x9=36
+        4x10=40
+*/
+
+let number=+prompt("Enter a number to have a table of any number in your browser");
+
+document.write("<br>Table of "+number);
+document.write("<br>"+number+"* 1 ="+number*1);
+document.write("<br>"+number+"* 2 ="+number*2);
+document.write("<br>"+number+"* 3 ="+number*3);
+document.write("<br>"+number+"* 4 ="+number*4);
+document.write("<br>"+number+"* 5 ="+number*5);
+document.write("<br>"+number+"* 6 ="+number*6);
+document.write("<br>"+number+"* 7 ="+number*7);
+document.write("<br>"+number+"* 8 ="+number*8);
+document.write("<br>"+number+"* 9 ="+number*9);
+document.write("<br>"+number+"* 10 ="+number*10);
+
+
+/* 
+Assignment # 6: The Temperature Converter: It's hot out! Let's make a converter based on the steps here.
+    a. Store a Celsius temperature into a variable.
+    b. Convert it to Fahrenheit & output "NNоC is NNоF”.
+    c. Now store a Fahrenheit temperature into a variable. 
+    d. Convert it to Celsius & output “NNoF is NNоC".
+
+Conversion Formulae:
+    °C (°F-32) x 5/9
+    °F (°C X9/5)+32
+
+For example:
+    25°C is 77°F
+    70°F is 21.11111111111111°C
+        
+*/
+let tempInCelsius=40;
+
+let tempInFahrenheit=(tempInCelsius * 9/5) + 32;
+
+document.write(`<br>${tempInCelsius}°C is ${tempInFahrenheit}°F`);
+
+let tempInFahrenheit2=100;
+
+let tempInCelsius2=(tempInFahrenheit - 32) * 5/9;
+
+document.write(`<br>${tempInFahrenheit2}°F is ${tempInCelsius2}°C`);
+
+/*
+Assignment # 7: Write a program to implement checkout process of a shopping cart system for an e-commerce website. Store the following in variables
+
+a. Price of item 1
+b. Price of item 2
+c. Ordered quantity of item 1
+d. Ordered Quantity of item 2
+e. Shipping charges
+Compute the total cost & show the receipt in your browser.
+*/
+
+let item1Price=500;
+let item2Price=700;
+
+let item1Quantity=2;
+let item2Quantity=3;
+
+let shippingCharges=100;
+
+let total=item1Price*item1Quantity + item2Price*item2Quantity + shippingCharges;
+
+document.write("<br><h2>Shopping Cart</h2>");
+document.write(`<br>Price of item 1 is ${item1Price}`);
+document.write(`<br>Quantity of item 1 is ${item1Quantity}`);
+document.write(`<br>Price of item 2 is ${item2Price}`);
+document.write(`<br>Quantity of item 2 is ${item2Quantity}`);
+document.write(`<br>Shipping charges are ${shippingCharges}`);
+
+document.write(`<br>Total cost of your order is ${total} PKR`);
+
+//Assignment # 8:Store total marks & marks obtained by a student in 2 variables.Compute the percentage and show the result in your browser 
+
+let totalMarks=1100;
+let marksObtained=838;
+
+let percentage=(marksObtained/totalMarks)*100;
+
+document.write("<br><h2>Marks Sheet</h2>");
+
+document.write(`<br>Total marks are ${totalMarks}`);
+
+document.write(`<br>Marks obtained are ${marksObtained}`);
+
+document.write(`<br>Percentage obtained is ${percentage}%`);
+/*
+    Assignment # 9:
+        Assume we have 10 US dollars & 25 Saudi Riyals. Write a script to convert the total currency to Pakistani Rupees. Perform all calculations in a single expression.
+        (Exchange rates : 1 US Dollar = 104.80 Pakistani Rupee and 1 Saudi Riyal = 28 Pakistani Rupee)
+*/
+document.write("<br><h2>Currency in PKR</h2>");
+
+let totalCurrency=10*104.80 + 25*28;
+
+document.write(`<br>Total currency in PKR : ${totalCurrency} PKR`);
+
+/*
+    Assignment # 10:Write a program to initialize a variable with some number and do arithmetic in following sequence:
+        a. Add 5
+        b. Multiply by 10
+        c. Divide the result by 2
+        Perform all calculations in a single expression
+*/
+
+let num=25;
+
+let result=(num+5)*10/2;
+
+document.write("<br>Result: "+result);
+
+/*
+    Assignment # 11:The Age Calculator: Forgot how old someone is? Calculate it!
+        a. Store the current year in a variable.         
+        b. Store their birth year in a variable.
+        c. Calculate their 2 possible ages based on the stored values.
+        Output them to the screen like so: “They  are either NN or NN years old".
+*/
+document.write("<br><h2>Age Calculator</h2>");
+
+let currentYear=2024;
+let yearOfBirth=2006;
+
+let age1=currentYear-yearOfBirth;
+let age2=currentYear-(yearOfBirth+1);
+
+document.write(`<br>They are either ${age1} or ${age2} years old.`);
+
+/*
+    Assignment # 12:The Geometrizer: Calculate properties of a circle.
+    a. Store a radius into a variable.
+    b. Calculate the circumference based on the radius, and output "The circumference is NN".
+    (Hint: Circumference of a circle = 2 π г, π = 3.142)
+    Calculate the area based on the radius, and output “The area is NN". (Hint: Area of a circle =  πг2,π=3.142)
+*/
+
+document.write("<br><h2>The Geometrizer</h2>");
+
+let radius=20;
+let π =3.142;
+let circumference=2*π*radius;
+let area=π * radius**2;
+document.write("<br>Radius of circle:"+radius);
+document.write(`<br>Circumference of circle is ${circumference}`);
+document.write(`<br>Area of circle is ${area}`);
+
+
+/*
+    Assignment # 13:The Lifetime Supply Calculator: Ever wonder how much a “lifetime supply" of your favorite snack is? Wonder no more.
+        a. Store your favorite snack into a variable
+        b. Store your current age into a variable.
+        c. Store a maximum age into a variable.
+        d. Store an estimated amount per day (as a number).
+        e. Calculate how many would you eat total for the rest of your life.
+        Output the result to the screen like so: "You will need NNNN to last you until the ripe old age of NN".
+*/
+
+document.write("<br><h2>The Lifetime Supply Calculator</h2>");
+
+let favoriteSnack="Chocolate bars";
+let currentAge=18;
+let maximumAge=120;
+let estimatedAmountPerDay=5;
+let totalAmount=estimatedAmountPerDay * (maximumAge-currentAge);
+document.write(`<br>Favorite snack:${favoriteSnack}`)
+document.write(`<br>Current age:${currentAge}`);
+document.write(`<br>Maximum age:${maximumAge}`);
+document.write(`<br>You will need ${totalAmount} ${favoriteSnack} to last you until the ripe old age of ${maximumAge}`);
