@@ -124,7 +124,7 @@ alert(displayingInBrowserAndAlertBox);
 
 document.write(displayingInBrowserAndAlertBox);
 
-//CHAPTER # 2-Variables for numbers:
+//CHAPTER # 3-Variables for numbers:
 
 // Variables for numbers are used to store numeric values. They are created using the let, const, or var keyword.
 
@@ -169,3 +169,39 @@ let productTitle="T-shirts";
 let quantity=56;
 
 document.write(`${visitorName} ordered ${quantity} ${productTitle} on XYZ Clothing store`);
+
+//CHAPTER # 4-Variables names:Legal & Illegal:
+
+//Assignment # 1:Declare 3 variables in one statement
+
+let name="Muhammad Ahmed Raza", rollNo=271422, isStudent=true;
+
+//Assignment # 2: Declare 5 legal and 5 illegal variable names
+
+let legalVariable1=123;
+let legalVariable2="abc";
+let legalVariable3=true;
+let legalVariable4=undefined;
+let legalVariable5=null;
+
+// let 2=true;
+// let @=false;
+// let !abc=abc;
+// let function="Hello World";
+// let 3a="34"
+
+//Assignment # 3: Declare this in your browser
+
+/*
+    a)A heading stating "Rules for naming JS Variables"
+    b)Variable names can only contain letters, numbers,underscores and $ signs.For example:$my1stVariable
+    c)Variables must begin with a letter,underscores or $ sign.For example: $my1stVariable _my1stVariable my1stVariable
+    d)Variable names are case-sensitive
+    e)Variable names should not be JS keywords
+*/
+
+document.write("<h2>Rules for naming JS Variables</h2>");
+document.write("<p>Variable names can only contain letters, numbers,underscores and $ signs.For example: $my1stVariable</p>");
+document.write("<p>Variables must begin with a letter,underscores or $ sign.For example: _my1stVariable my1stVariable my1stVariable</p>");
+document.write("<p>Variable names are case-sensitive</p>");
+document.write("<p>Variable names should not be JS keywords</p>");
