@@ -211,13 +211,13 @@
 // //Assignment # 1:Write a program that take two numbers and add them in a new variable.Show the result in your browser.
 
 // //For example:Sum of 56 and 16 is 72
-// let num1=+prompt("Give first number")
+// let firstNum=+prompt("Give first number")
 
-// let num2=+prompt("Give second number")
+// let secondNum=+prompt("Give second number")
 
-// let sum=num1+num2;
+// let sum=firstNum+secondNum;
 
-// document.write(`Sum of ${num1} and ${num2} is ${sum}`);
+// document.write(`Sum of ${firstNum} and ${secondNum} is ${sum}`);
 
 // //Assignment # 2:Repeat task 1 for subtraction,multiplication,division and modulus
 
@@ -282,9 +282,9 @@
 
 // let ticketPrice=1000;
 
-// let totalCost=ticketPrice*5;
+// let totalCostOfTickets=ticketPrice*5;
 
-// document.write(`<br>Total cost of buying 5 tickets is: ${totalCost} PKR`);
+// document.write(`<br>Total cost of buying 5 tickets is: ${totalCostOfTickets} PKR`);
 
 // //Assignment # 5:Write a script to display multiple table of any number in your browser.
 
@@ -332,7 +332,7 @@
 // For example:
 //     25°C is 77°F
 //     70°F is 21.11111111111111°C
-        
+
 // */
 // let tempInCelsius=40;
 
@@ -378,18 +378,18 @@
 
 // //Assignment # 8:Store total marks & marks obtained by a student in 2 variables.Compute the percentage and show the result in your browser 
 
-// let totalMarks=1100;
+// let grandTotal=1100;
 // let marksObtained=838;
 
-// let percentage=(marksObtained/totalMarks)*100;
+// let achivedPercentage=(marksObtained/grandTotal)*100;
 
 // document.write("<br><h2>Marks Sheet</h2>");
 
-// document.write(`<br>Total marks are ${totalMarks}`);
+// document.write(`<br>Total marks are ${grandTotal}`);
 
 // document.write(`<br>Marks obtained are ${marksObtained}`);
 
-// document.write(`<br>Percentage obtained is ${percentage}%`);
+// document.write(`<br>Percentage obtained is ${achivedPercentage}%`);
 // /*
 //     Assignment # 9:
 //         Assume we have 10 US dollars & 25 Saudi Riyals. Write a script to convert the total currency to Pakistani Rupees. Perform all calculations in a single expression.
@@ -411,9 +411,9 @@
 
 // let num=25;
 
-// let result=(num+5)*10/2;
+// let resultOfArithematicSequence=(num+5)*10/2;
 
-// document.write("<br>Result: "+result);
+// document.write("<br>Result: "+resultOfArithematicSequence);
 
 // /*
 //     Assignment # 11:The Age Calculator: Forgot how old someone is? Calculate it!
@@ -474,9 +474,7 @@
 // document.write(`<br>You will need ${totalAmount} ${favoriteSnack} to last you until the ripe old age of ${maximumAge}`);
 
 // //CHAPTER # 6-9-Math Expressions:
-
 // /*
-
 // Assignment # 1: Write a program to take a number in a variable, do the required arithmetic to display the following result in your browser:
 
 // Result:
@@ -531,86 +529,349 @@
 
 // */
 
-var a = 2;
-var b = 1;
-var result = --a - --b + ++b + b--;
+// var a2 = 2;
+// var b = 1;
+// var result = --a2 - --b + ++b + b--;
 
-document.write("<br>a: " + a);
+// document.write("<br>a: " + a2);
 
-document.write("<br>b: " + b);
+// document.write("<br>b: " + b);
 
-// document.write("<br>--a is a pre-decrement operator so firstly the value of a which was 2 now becomes 1<br>Then there is a subtraction operator<br>Then,--b,which is a pre-decrement operator so because of it the value of b which was 1 now becomes 0<br>The result of --a - --b is 1 <br>Then there is an addition operator<br>Then,++b,which is a pre-increament operator so  the value of b which was 0 now becomes 1<br>The result of --a - --b + ++b is 2 <br>Then there is an addition operator<br>Then,b--,which is a post-decreament operator<br>So,the final  result of --a - --b + ++b + b-- is 3 <br>");
+// // document.write("<br>--a is a pre-decrement operator so firstly the value of a which was 2 now becomes 1<br>Then there is a subtraction operator<br>Then,--b,which is a pre-decrement operator so because of it the value of b which was 1 now becomes 0<br>The result of --a - --b is 1 <br>Then there is an addition operator<br>Then,++b,which is a pre-increament operator so  the value of b which was 0 now becomes 1<br>The result of --a - --b + ++b is 2 <br>Then there is an addition operator<br>Then,b--,which is a post-decreament operator<br>So,the final  result of --a - --b + ++b + b-- is 3 <br>");
 
-document.write("<br>result: " + result);
+// document.write("<br>result: " + result);
 
-// Assignment # 3:Write a program that takes input a name from user & greet the user.
+// // Assignment # 3:Write a program that takes input a name from user & greet the user.
 
-let userNameToGreet= prompt("Enter your name");
+// let userNameToGreet = prompt("Enter your name");
 
-document.write("<br>Hello " + userNameToGreet + "! How are you today?");
+// document.write("<br>Hello " + userNameToGreet + "! How are you today?");
 
-// Assignment # 4:Write a program to take input a number from user & display it's multiplication table on your browser. If user does not enter a new number, multiplication table of 5 should be displayed by default.
+// // Assignment # 4:Write a program to take input a number from user & display it's multiplication table on your browser. If user does not enter a new number, multiplication table of 5 should be displayed by default.
 
-let numberToMultiply=(prompt("Enter a number to display multiplication table (or leave blank for 5):"));
+// let numberToMultiply = (prompt("Enter a number to display multiplication table (or leave blank for 5):"));
 
-if (numberToMultiply === "" || isNaN(numberToMultiply)) {
-    numberToMultiply = 5;
-}
+// if (numberToMultiply === "" || isNaN(numberToMultiply)) {
+//     numberToMultiply = 5;
+// }
 
-document.write("<br><h2>Multiplication Table of " + numberToMultiply + "</h2>");
+// document.write("<br><h2>Multiplication Table of " + numberToMultiply + "</h2>");
 
-document.write("<br>Table of "+numberToMultiply);
-document.write("<br>"+numberToMultiply+"* 1 ="+numberToMultiply*1);
-document.write("<br>"+numberToMultiply+"* 2 ="+numberToMultiply*2);
-document.write("<br>"+numberToMultiply+"* 3 ="+numberToMultiply*3);
-document.write("<br>"+numberToMultiply+"* 4 ="+numberToMultiply*4);
-document.write("<br>"+numberToMultiply+"* 5 ="+numberToMultiply*5);
-document.write("<br>"+numberToMultiply+"* 6 ="+numberToMultiply*6);
-document.write("<br>"+numberToMultiply+"* 7 ="+numberToMultiply*7);
-document.write("<br>"+numberToMultiply+"* 8 ="+numberToMultiply*8);
-document.write("<br>"+numberToMultiply+"* 9 ="+numberToMultiply*9);
-document.write("<br>"+numberToMultiply+"* 10 ="+numberToMultiply*10);
+// document.write("<br>Table of " + numberToMultiply);
+// document.write("<br>" + numberToMultiply + "* 1 =" + numberToMultiply * 1);
+// document.write("<br>" + numberToMultiply + "* 2 =" + numberToMultiply * 2);
+// document.write("<br>" + numberToMultiply + "* 3 =" + numberToMultiply * 3);
+// document.write("<br>" + numberToMultiply + "* 4 =" + numberToMultiply * 4);
+// document.write("<br>" + numberToMultiply + "* 5 =" + numberToMultiply * 5);
+// document.write("<br>" + numberToMultiply + "* 6 =" + numberToMultiply * 6);
+// document.write("<br>" + numberToMultiply + "* 7 =" + numberToMultiply * 7);
+// document.write("<br>" + numberToMultiply + "* 8 =" + numberToMultiply * 8);
+// document.write("<br>" + numberToMultiply + "* 9 =" + numberToMultiply * 9);
+// document.write("<br>" + numberToMultiply + "* 10 =" + numberToMultiply * 10);
 
-/*
+// /*
 
-Assignment # 5:
-a) Take three subjects name from user and store them in 3 different variables.
-b) Total marks for each subject is 100, store it in another variable.
-c) Take obtained marks for first subject from user and stored it in different variable.
-d) Take obtained marks of remaining two subjects from user and store them in different variable
-e) Now,Calculate the total marks and percentage and show the result in browser(Hint:use tables)
-*/
+// Assignment # 5:
+// a) Take three subjects name from user and store them in 3 different variables.
+// b) Total marks for each subject is 100, store it in another variable.
+// c) Take obtained marks for first subject from user and stored it in different variable.
+// d) Take obtained marks of remaining two subjects from user and store them in different variable
+// e) Now,Calculate the total marks and percentage and show the result in browser(Hint:use tables)
+// */
 
-let subject1 = prompt("Enter the name of the first subject:");
-let subject2 = prompt("Enter the name of the second subject:");
-let subject3 = prompt("Enter the name of the third subject:");
+// let subject1 = prompt("Enter the name of the first subject:");
+// let subject2 = prompt("Enter the name of the second subject:");
+// let subject3 = prompt("Enter the name of the third subject:");
 
-let totalMarks = 100;
+// let totalMarks = 300;
 
-let obtainedMarks1 =(+prompt("Enter obtained marks for " + subject1 + ":"));
+// let obtainedMarks1 = (+prompt("Enter obtained marks for " + subject1 + ":"));
 
-let obtainedMarks2 =(+prompt("Enter obtained marks for " + subject2 + ":"));
+// let obtainedMarks2 = (+prompt("Enter obtained marks for " + subject2 + ":"));
 
-let obtainedMarks3 =(+prompt("Enter obtained marks for " + subject3 + ":"));
+// let obtainedMarks3 = (+prompt("Enter obtained marks for " + subject3 + ":"));
 
-let totalObtainedMarks = obtainedMarks1 + obtainedMarks2 + obtainedMarks3;
+// let totalObtainedMarks = obtainedMarks1 + obtainedMarks2 + obtainedMarks3;
 
-let percentage = (totalObtainedMarks / totalMarks) * 100;
+// let percentage = (totalObtainedMarks / totalMarks) * 100;
 
-document.write("<br><h2>Student Performance Report</h2>");
+// document.write("<br><h2>Student Performance Report</h2>");
 
-document.write("<table border='1'>");
+// document.write("<table border='1'>");
 
-document.write("<tr><th>Subject</th><th>Obtained Marks</th><th>Total Marks</th></tr>");
+// document.write("<tr><th>Subject</th><th>Obtained Marks</th><th>Total Marks</th></tr>");
 
-document.write("<tr><td>" + subject1 + "</td><td>" + obtainedMarks1 + "</td><td>" + totalMarks + "</td></tr>");
+// document.write("<tr><td>" + subject1 + "</td><td>" + obtainedMarks1 + "</td><td>" + totalMarks + "</td></tr>");
 
-document.write("<tr><td>" + subject2 + "</td><td>" + obtainedMarks2 + "</td><td>" + totalMarks + "</td></tr>");
+// document.write("<tr><td>" + subject2 + "</td><td>" + obtainedMarks2 + "</td><td>" + totalMarks + "</td></tr>");
 
-document.write("<tr><td>" + subject3 + "</td><td>" + obtainedMarks3 + "</td><td>" + totalMarks + "</td></tr>");
+// document.write("<tr><td>" + subject3 + "</td><td>" + obtainedMarks3 + "</td><td>" + totalMarks + "</td></tr>");
 
-document.write("<tr><td>Total</td><td>" + totalObtainedMarks + "</td><td>" + totalMarks + "</td></tr>");
+// document.write("<tr><td>Total</td><td>" + totalObtainedMarks + "</td><td>" + totalMarks + "</td></tr>");
 
-document.write("<tr><td>Percentage</td><td>" + percentage + "%</td><td></td></tr>");
+// document.write("<tr><td>Percentage</td><td>" + percentage + "%</td><td></td></tr>");
 
-document.write("</table>");
+// document.write("</table>");
+
+// // //CHAPTER # 9-11-USER INPUT & CONDITIONAL STATEMENTS:
+
+// // Assignment # 1: Write a program to take "city" name as input from user. If user enters "Karachi”, welcome the user like this: "Welcome to city of lights"
+
+// let cityName = prompt("Enter your city name:");
+
+// if (cityName === "Karachi") {
+//     document.write("<br>Welcome to city of lights");
+// }
+
+// // Assignment # 2:Write a program to take "gender" as input from user. If the user is male, give the message: Good Morning Sir. If the user is female, give the message: Good Morning Ma'am.
+
+// let userGender = prompt("Enter your gender (male/female):");
+
+// if (userGender === "male") {
+//     document.write("<br>Good Morning Sir");
+// } else if (userGender === "female") {
+//     document.write("<br>Good Morning Ma'am");
+// }
+
+// // Assignment # 3: Write a program to take input color of road traffic signal from the user & show the message according to this table:
+// // Signal color     Message 
+// // Red              Must Stop
+// // Yellow           Ready to move
+// // Green            Move now
+
+// let signalColor = prompt("Enter the color of the road traffic signal (red/yellow/green):");
+
+// if (signalColor === "red") {
+//     document.write("<br>Must Stop");
+// } else if (signalColor === "yellow") {
+//     document.write("<br>Ready to move");
+// } else if (signalColor === "green") {
+//     document.write("<br>Move now");
+// }
+
+// // Assignment # 4: Write a program to take input remaining fuel in car (in litres) from user. If the current fuel is less than 0.25litres, show the message "Please refill the fuel in your car"
+
+// let remainingFuel = +prompt("Enter the remaining fuel in your car (in litres):");
+
+// if (remainingFuel < 0.25) {
+//     document.write("<br>Please refill the fuel in your car");
+// }
+
+// /*
+// Assignment # 5:Run this script, & check whether alert message would be displayed or not. Record the outputs.
+//         a. var a=4;
+//         if (++a ===5){
+//         alert("given condition for variable a is true");
+//         }
+
+//         b. var b = 82;
+//         if (b++===83){
+//         alert("given condition for variable b is true");
+//         }
+
+//         c. var c = 12;
+//         if (c++ === 13){
+//         alert("condition 1 is true");
+//         }
+//         if (c === 13){
+//         alert("condition 2 is true");
+//         }
+//         if (++c < 14){
+//         alert("condition 3 is true");
+//         }
+//         if(c === 14){
+//         alert("condition 4 is true");
+        
+//         d. var materialCost = 20000;
+//         var laborCost = 2000;
+//         var totalCost = materialCost + laborCost;
+//         if (totalCost === laborCost + materialCost){ alert("The cost equals");
+//         }
+
+//         e. if (true){ alert("True");
+//         }
+//         if (false) { alert("False");
+//         }
+
+//         f. if("car"<"cat"){
+//         alert("car is smaller than cat");
+//         }
+// */
+
+// let a3 = 4;
+
+// if (++a3 === 5) {
+//     alert("Condition 1 is true");
+// }
+
+// let b = 82;
+
+// if (b++ === 83) {
+//     alert("Condition 2 is true");
+// }
+
+// let c = 12;
+
+// if (c++ === 13) {
+//     alert("Condition 3 is true");
+// }
+
+// if (c === 13) {
+//     alert("Condition 4 is true");
+// }
+
+// if (++c < 14) {
+//     alert("Condition 5 is true");
+// }
+
+// if (c === 14) {
+//     alert("Condition 6 is true");
+// }
+
+// let materialCost = 20000;
+
+// let laborCost = 2000;
+
+// let totalCost = materialCost + laborCost;
+
+// if (totalCost === laborCost + materialCost) {
+//     alert("The cost equals");
+// }
+
+// if (true) {
+//     alert("Condition 7 is true");
+// }
+
+// if (false) {
+//     alert("Condition 8 is true");
+// }
+
+// if ("car" < "cat") {
+//     alert("Condition 9 is true");
+// }
+
+// //Assignment # 6: Write a program to take input the marks obtained in three subjects & total marks. Compute & show the resulting percentage on your page. Take percentage & compute grade as per following table:
+// // Percentage %                       Grade               Remarks
+// // Greater than or equal to 80        A-one               Excellent
+// // Greater than or equal to 70        A                   Good
+// // Greater than or equal to 60        B                   You need to improve
+// //          Less than 60              Fail                Sorry
+
+// let subject1Marks = +prompt("Enter marks obtained in subject 1:");
+// let subject2Marks = +prompt("Enter marks obtained in subject 2:");
+// let subject3Marks = +prompt("Enter marks obtained in subject 3:");
+
+// let totalMarksObtained = subject1Marks + subject2Marks + subject3Marks;
+// let percentageObtained = (totalMarksObtained / 300) * 100;
+
+// let grade;
+// let remarks;
+
+// if (percentageObtained >= 80) {
+//     grade = "A-one";
+//     remarks = "Excellent";
+// } else if (percentageObtained >= 70) {
+//     grade = "A";
+//     remarks = "Good";
+// } else if (percentageObtained >= 60) {
+//     grade = "B";
+//     remarks = "You need to improve";
+// } else {
+//     grade = "Fail";
+//     remarks = "Sorry";
+// }
+
+// document.write("<h2>Mark Sheet</h2>");
+// document.write("Total Marks: 300");
+// document.write("<br>Total Marks Obtained: " + totalMarksObtained);
+// document.write("<br>Percentage: " + percentageObtained + "%");
+// document.write("<br>Grade: " + grade);
+// document.write("<br>Remarks: " + remarks);
+
+// /*
+// Assignment # 7:Guess game:
+// Store a secret number (ranging from 1 to 10) in a variable. Prompt user to guess the secret number.
+// a. If user guesses the same number, show "Bingo! Correct answer".
+// b. If the guessed number +1 is the secret number, show "Close enough to the correct answer”.
+// */
+
+// let secretNumber = 5;
+
+// let userGuess = +prompt("Guess the secret number (1-10):");
+
+// if (userGuess === secretNumber) {
+//     document.write("<br>Bingo! Correct answer");
+// } else if (userGuess + 1 === secretNumber) {
+//     document.write("<br>Close enough to the correct answer");
+// }
+
+// //Assignment # 8: Write a program to check whether the given number is divisible by 3. Show the message to the user if the number is divisible by 3.
+
+// let numberToCheck = +prompt("Enter a number:");
+
+// if (numberToCheck % 3 === 0) {
+//     document.write("<br>" + numberToCheck + " is divisible by 3");
+// } else {
+//     document.write("<br>" + numberToCheck + " is not divisible by 3");
+// }
+
+// // Assignment # 9: Write a program that checks whether the given input is an even number or an odd number.
+
+// let numberToCheck2 = +prompt("Enter a number:");
+
+// if (numberToCheck2 % 2 === 0) {
+//     document.write("<br>" + numberToCheck2 + " is an even number");
+// } else {
+//     document.write("<br>" + numberToCheck2 + " is an odd number");
+// }
+// /*
+// Assignment # 10:Write a program that takes temperature as input and shows a message based on following criteria
+// a. T > 40 then "It is too hot outside."
+// b. T > 30 then "The Weather today is Normal.”
+// c. T > 20 then "Today's Weather is cool."
+// d. T > 10 then "OMG! Today's weather is so Cool."
+// */
+
+// let temperature = +prompt("Enter temperature in Celsius:");
+
+// if (temperature > 40) {
+//     document.write("<br>It is too hot outside.");
+// } else if (temperature > 30) {
+//     document.write("<br>The weather today is Normal.");
+// } else if (temperature > 20) {
+//     document.write("<br>Today's Weather is cool.");
+// } else if (temperature > 10) {
+//     document.write("<br>OMG! Today's weather is so Cool.");
+// }
+
+// /*
+// Assignment # 11:Write a program to create a calculator for +,-,*, / & % using if statements. Take the following input:
+// a. First number
+// b. Second number
+// c. Operation (+, -, *, /, %)
+// Compute & show the calculated result to user.
+// */
+
+// let num1 = +prompt("Enter first number:");
+// let num2 = +prompt("Enter second number:");
+// let operation = prompt("Enter an operation (+, -, *, /, %):");
+
+// if (operation === "+") {
+//     document.write("<br>Result: " + (num1 + num2));
+// } else if (operation === "-") {
+//     document.write("<br>Result: " + (num1 - num2));
+// } else if (operation === "*") {
+//     document.write("<br>Result: " + (num1 * num2));
+// } else if (operation === "/") {
+//     if (num2 === 0) {
+//         document.write("<br>Error: Division by zero is not allowed.");
+//     } else {
+//         document.write("<br>Result: " + (num1 / num2));
+//     }
+// } else if (operation === "%"){
+//     if (num2 === 0) {
+//         document.write("<br>Error: Division by zero is not allowed.");
+//     } else {
+//         document.write("<br>Result: " + (num1 % num2));
+//     }
+// }
