@@ -681,7 +681,7 @@
 //         }
 //         if(c === 14){
 //         alert("condition 4 is true");
-        
+
 //         d. var materialCost = 20000;
 //         var laborCost = 2000;
 //         var totalCost = materialCost + laborCost;
@@ -876,7 +876,7 @@
 //     }
 // }
 
-////CHAPTER # 12-13:IF..ELSE & ELSE IF STATEMENT,TESTING SET OF CONDITIONS
+// //CHAPTER # 12-13:IF..ELSE & ELSE IF STATEMENT,TESTING SET OF CONDITIONS
 
 // //Assignment # 1: Write a program that takes a character (number or string) in a variable & checks whether the given input is a number, uppercase letter or lower case letter. (Hint: ASCII codes:- A=65, Z=90, a=97, z=122).
 
@@ -1177,3 +1177,147 @@
 // }
 
 // document.write("</select>");
+
+// //Chapter 17-20:Arrays and Loops
+
+// //Assignment # 1:Declare and initialize an empty multi-dimensional array.(Arrays of array)
+
+// let multiDimArray = [];
+
+// /*
+// Assignment # 2:Declare and initialize a multi-dimensional array representing the following matrix
+//         0   1   2   3
+//         1   0   1   2
+//         2   1   0   1
+// */
+
+// multiDimArray = [
+//     [0, 1, 2, 3],
+//     [1, 0, 1, 2],
+//     [2, 1, 0, 1]
+// ];
+
+// //Assignment # 3:Write a program to print numerical counting from 1 to 10.
+
+// for (let i = 1; i <= 10; i++) {
+//     document.write(i + "<br>");
+// }
+
+// //Assignment # 4: Write a program to print multiplication table of any number using for loop.Table number and length should be taken as an input from user.
+
+// let tableNumber = +(prompt("Enter a number to show its multiplication table:"));
+// let tableLength = +(prompt("Enter the length of the multiplication table:"));
+
+// for (let i = 1; i <= tableLength; i++) {
+//     document.write(tableNumber + " x " + i + " = " + (tableNumber * i) + "<br>");
+// }
+
+// /*
+// Assignment # 5:Write a program to print items of the following array using for loop:
+// fruits = ["apple", "banana", "mango", "orange", "strawberry"]
+
+// apple 
+// banana
+// mango
+// orange 
+// strawberry
+
+// Element at index 0 is apple Element at index 1 is banana
+// Element at index 2 is mango
+// Element at index 3 is orange
+// Element at index 4 is strawberry
+// */
+
+// let fruits = ["apple", "banana", "mango", "orange", "strawberry"];
+// document.write(fruits)
+// for (let i = 0; i < fruits.length; i++) {
+//     document.write("<br>Element at index " + i + " is " + fruits[i]);
+// }
+
+// /*
+// Assignment # 6:Generate the following series in your browser. See example output.
+// a. Counting: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 
+// b. Reverse counting: 10, 9, 8, 7, 6, 5, 4, 3, 2, 1
+// c. Even: 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20
+// d. Odd: 1, 3, 5, 7, 9, 11, 13, 15, 17, 19
+// e. Series: 2k, 4k, 6k, 8k, 10k, 12k, 14k, 16k, 18k, 20k
+// */
+
+// let counting = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+
+// for (let i = 0; i <= 15; i++) {
+//     document.write("<br>Counting: " + counting[i]);
+// }
+
+// counting.reverse();
+
+// for (let i = 10; i <= counting.length - 2; i++) {
+//     document.write("<br>Reverse counting: " + counting[i]);
+// }
+
+// counting.reverse();
+
+// for (let i = 0; i <= counting.length - 1; i += 2) {
+//     document.write("<br>Even: " + counting[i]);
+// }
+
+// for (let i = 1; i <= counting.length - 1; i += 2) {
+//     document.write("<br>Odd: " + counting[i]);
+// }
+
+// for (let i = 2; i <= counting.length - 1; i++) {
+//     document.write("<br>Series: " + counting[i] + "k");
+// }
+
+// /*
+// Assignment # 7: You have an array
+// A = ["cake", "apple pie”, “cookie”, “chips”, “patties"]
+// Write a program to enable “search by user input” in an array.
+// After searching, prompt the user whether the given item is found in the list or not.
+// */
+
+// let A = ["cake", "apple pie", "cookie", "chips", "patties"];
+
+// let userInput = prompt("Welcome to ABC Bakery.What do want to order sir/ma'am?:");
+
+// let isFound = A.includes(userInput);
+
+// if (isFound) {
+//     alert(userInput + " is available at index "+A.indexOf(userInput) +" in our bakery!");
+// } else {
+//     alert("We are sorry "+userInput + " is not found in our bakery!");
+// }
+
+// //Assignment # 8:Write a program to identify the largest number in the array.
+
+// let numbers = [16, 56, 16, 49, 10];
+
+// document.write("\nArray items: " + numbers);
+
+// let largestNumber = numbers[0];
+
+// for (let i = 1; i < numbers.length; i++) {
+//     if (numbers[i] > largestNumber) {
+//         largestNumber = numbers[i];
+//         document.write("<br>The largest number is " + numbers[i]);
+//     }
+// }
+
+// // Assignment # 9: Write a program to find the smallest number in the array.
+
+// let smallestNumber = numbers[0];
+
+// for (let i = 1; i < numbers.length; i++) {
+//     if (numbers[i] < smallestNumber) {
+//         smallestNumber = numbers[i];
+//         document.write("<br>The smallest number is " + numbers[i]);
+//     }
+// }
+
+// // Assignment # 10: Write a program to print multiples of 5 ranging 1 to 100.
+
+// for (let i = 1; i <= 100; i++) {
+//     if (i % 5 === 0) {
+//         document.write("<br>" + i);
+//     }
+// }

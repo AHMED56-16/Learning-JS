@@ -37,7 +37,7 @@ let street;
 let country;
 
 street = '123 Main St';
-country="Pakistan";
+country = "Pakistan";
 
 let fullMailingAddress = street + ' ' + country;
 
@@ -57,9 +57,9 @@ console.log(fullMailingAddress);
     9.Log message 
 */
 
-let score1=76;
-let score2=99;
-let score3=56;
+let score1 = 76;
+let score2 = 99;
+let score3 = 56;
 
 let totalScore = score1 + score2 + score3;
 
@@ -77,7 +77,7 @@ let remainingPlates = plates - people;
 
 remainingPlates++;
 
-let message = 'There are'+" "+remainingPlates +" "+'plates available';
+let message = 'There are' + " " + remainingPlates + " " + 'plates available';
 
 console.log(message);
 
@@ -91,7 +91,7 @@ console.log(message);
     5.Log both fist fruit variable and entire fruit array
 */
 
-let fruits = ['apple', 'banana', 'orange', 'grape',56];
+let fruits = ['apple', 'banana', 'orange', 'grape', 56];
 
 let firstFruit = fruits[0];
 
@@ -128,3 +128,98 @@ console.log('Order 1:', order1);
 console.log('Order 2:', order2);
 
 console.log('Order 3:', order3);
+
+/*
+Assignment # 6:
+
+    1.create car object
+    2.add make, model, year, colors (array), hybrid (boolean) keys
+    3.add two methods (drive and stop)
+    4.in the function body setup log with random text
+    5.Log make
+    6.log first color
+    7.invoke both methods
+
+*/
+
+let car = {
+    make: 'Toyota',
+    model: 'Camry',
+    year: 2020,
+    colors: ['blue', 'black', 'red'],
+    hybrid: true,
+    drive: function () {
+        console.log('Drive carefully');
+    },
+    stop: function () {
+        console.log('Stop the car');
+    }
+};
+
+console.log('Make:', car.make);
+
+console.log('First Color:', car.colors[0]);
+
+car.drive();
+
+car.stop();
+
+/*
+Assignment # 7:
+
+    1.create two objects "person1", "person2" setup name, age (15-25),
+    2.status ('resident', 'tourist') keys
+    3.setup if else, condition where
+    4.age must be bigger than 18 and status must be
+    5.equal to 'resident'
+    6.test with both objects
+
+*/
+
+let person1 = {
+    name: 'Muhammad Ahmed Raza',
+    age: 18,
+    status: 'resident'
+};
+
+let person2 = {
+    name: 'Babar Azam',
+    age: 30,
+    status: 'resident'
+};
+
+if (person1.age > 18 && person1.status === 'resident') {
+    console.log(person1.name + ' is eligible');
+} else {
+    console.log(person1.name + ' is not eligible');
+}
+
+if (person2.age > 18 && person2.status === 'resident') {
+    console.log(person2.name + ' is eligible');
+} else {
+    console.log(person2.name + ' is not eligible');
+}
+
+/*
+Assignment # 8:
+
+    1.create function fullName
+    2.accept two parameters "firstName", "lastName"
+    3.add them together (concat) and return result in upercase
+    4.invoke fullName and pass some values
+    5.log result
+    6.change the order of arguments
+
+*/
+
+function fullName(firstName, lastName) {
+    return firstName.toUpperCase() + ' ' + lastName.toUpperCase();
+}
+
+let fullNameResult = fullName('Muhammad', 'Ahmed Raza');
+console.log('Full Name:', fullNameResult);
+
+let fullNameResult2 = fullName('Ahmed Raza', 'Muhammad');
+
+console.log('Full Name:', fullNameResult2);
+
